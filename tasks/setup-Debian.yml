@@ -1,3 +1,4 @@
 ---
 - name: Ensure pip is installed.
   apt: name=python-pip state=present
+  ignore_errors: "{{ ansible_check_mode }}"

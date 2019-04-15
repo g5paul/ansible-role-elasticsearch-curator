@@ -10,6 +10,7 @@
     name:
       - elasticsearch-curator
       - argparse
+  ignore_errors: "{{ ansible_check_mode }}"
 
 - name: Configure cron jobs for Elasticsearch Curator.
   cron:
